@@ -11,7 +11,7 @@ def core_exception_handler(exc, context):
     return response
 
 
-def _handle_generic_error(exc, context, response):
+def _handle_generic_error(exc, context, response):  # pylint: disable=unused-argument
     response.data = {'errors': response.data}
 
     return response
