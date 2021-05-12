@@ -4,7 +4,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from .views import UserListCreateViewSet, UserModelViewSet, TokenAuthenticationView
 
 
-app_name = 'Dev_E_test_task_app'
+app_name = 'dev_crud_task_app'
 
 
 user_list = UserListCreateViewSet.as_view({

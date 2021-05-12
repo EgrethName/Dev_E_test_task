@@ -49,7 +49,7 @@ USER_DATA_WRONG_USERNAME = {
 
 
 class UserCreateListTestCase(APITestCase):
-    url = reverse("Dev_E_test_task_app:user-list")
+    url = reverse("dev_crud_task_app:user-list")
 
     def test_failed_user_registration_without_username(self):
         """
@@ -121,7 +121,7 @@ class UserCreateListTestCase(APITestCase):
 
 
 class UserAuthTokenTestCase(APITestCase):
-    url = reverse("Dev_E_test_task_app:api-token-auth")
+    url = reverse("dev_crud_task_app:api-token-auth")
 
     def setUp(self):
         """
@@ -147,7 +147,7 @@ class UserAuthTokenTestCase(APITestCase):
 
 class UserTokenAPIViewTestCase(APITestCase):
     def url(self, pk):
-        return reverse("Dev_E_test_task_app:user-detail", kwargs={"pk": pk})
+        return reverse("dev_crud_task_app:user-detail", kwargs={"pk": pk})
 
     def setUp(self):
         """
